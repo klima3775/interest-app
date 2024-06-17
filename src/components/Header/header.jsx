@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../Logo/Logo";
+import Logo from "../../assets/svg/logo_and_text.svg";
 
 // импорт стилей
 import "./reset.scss";
@@ -18,7 +18,7 @@ const Header = () => {
     <div className="main-section">
       <div className="container">
         <header className="header flex a-itm--center gap32 f-wrp--wrap">
-          <Logo />
+          <img src={Logo} alt="logo" />
           <nav>
             <ul className="nav-list flex gap32 f-wrp--wrap">
               <li className="nav-item hug">
