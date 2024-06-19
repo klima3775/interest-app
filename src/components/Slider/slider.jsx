@@ -1,4 +1,4 @@
-import { Navigation, Pagination, A11y } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,13 +10,17 @@ const Slider = () => {
   return (
     <div className="wrapper">
       <Swiper
-        modules={[Navigation, Pagination, A11y]}
+        modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
-        slidesPerView={1.5}
+        slidesPerView={2}
         centeredSlides={true}
         navigation
         pagination={{ clickable: true }}
         loop={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
       >
         <SwiperSlide>
           <div className="slide-content">
