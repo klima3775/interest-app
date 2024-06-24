@@ -1,0 +1,14 @@
+.wrapper {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 50%; /* Align vertically in the middle */
+  }
+
+  .swiper-button-next {
+    right: 10%; /* Adjust as needed */
+  }
+
+  .swiper-button-prev {
+    left: 10%; /* Adjust as needed */
+  }
+}
