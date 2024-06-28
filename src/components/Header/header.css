@@ -223,3 +223,6 @@ body {
 .brd-top--primary {
   border-top: var(--clr-primary) solid 2px;
 }
+.language {
+  cursor: pointer;
+}
