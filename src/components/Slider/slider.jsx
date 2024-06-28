@@ -21,6 +21,24 @@ const Slider = () => {
           delay: 3000,
           disableOnInteraction: false,
         }}
+        breakpoints={{
+          300: {
+            slidesPerView: 1,
+          },
+          // Когда ширина экрана >= 320px
+          320: {
+            slidesPerView: 1,
+          },
+          // Когда ширина экрана >= 640px
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // Когда ширина экрана >= 768px
+          768: {},
+          // Когда ширина экрана >= 1024px
+          1024: {},
+        }}
       >
         <SwiperSlide>
           <div className="slide-content">
