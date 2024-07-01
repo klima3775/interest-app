@@ -3,19 +3,11 @@ import TwoCat from "../../assets/svg/Dialog/TwoCat.svg";
 
 const InfoBlock = () => {
   return (
-    <div
-      className=" flex items-start"
-      style={{
-        position: "absolute",
-        left: "22%",
-        transform: "translateX(-50%)",
-        top: "30%",
-      }}
-    >
-      <div className="max-w-md p-6 bg-white shadow-lg rounded-lg ml-4">
+    <div className="absolute left-0 top-1/3 w-full px-4 md:px-8">
+      <div className="max-w-md p-6 bg-white shadow-lg rounded-lg ml-4 md:ml-8">
         <div className="flex items-center mb-4">
           <div>
-            <img src={cat} alt="Cat Icon" className="w-25 h-20" />
+            <img src={cat} alt="Cat Icon" className="w-20 h-20" />
           </div>
           <div className="ml-4">
             <p className="text-gray-800">
