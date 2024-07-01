@@ -5,6 +5,7 @@ import "./App.scss";
 import Slider from "./components/Slider/slider";
 import Ticker from "./components/Ticker/ticker";
 import BurgerMenu from "./components/BurgerMenu/Burger";
+import InfoBlock from "./components/Dialog/dialog";
 
 import Header from "./components/Header/header";
 
@@ -23,10 +24,11 @@ function App() {
 
   return (
     <Router>
-      <div className="App bg-gray-100 h-screen">
+      <div className="App bg-gray-100 h-screen bg-[url('./assets/img/background.png')] bg-cover bg-center">
         {windowWidth > 768 ? <Header /> : <BurgerMenu />}
-        <Ticker />
-        <Slider />
+        {/* <Ticker />
+        <Slider /> */}
+        <InfoBlock />
       </div>
     </Router>
   );
