@@ -1,4 +1,5 @@
-// ParentComponent.jsx
+//
+
 import React from "react";
 import "./bg.scss";
 import InfoBlock from "../Dialog/dialog";
@@ -18,8 +19,9 @@ const ParentComponent = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
-    <div className="background ">
+    <div className="background">
       {windowWidth > 768 ? <Header /> : <BurgerMenu />}
       <InfoBlock />
     </div>
