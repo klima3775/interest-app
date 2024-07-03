@@ -1,4 +1,4 @@
-//
+// тут компонент фона для изображения, который содержит в себе компоненты Header и InfoBlock
 
 import React from "react";
 import "./bg.scss";
