@@ -21,10 +21,10 @@ const Ticker = () => {
   return (
     <>
       <section>
-        <div className="container">
-          <p className="text" ref={textRef}>
+        <div className="container bg-gray-100  ">
+          <p className="text " ref={textRef}>
             <span ref={spanRef}>Hello, World!!! </span>
-            <span>Назар Работай!!!</span>
+            <span className="">Назар Работай!!!</span>
             <span>Назар Работай!!!</span>
             <span>Назар Работай!!!</span>
             <span>Назар Работай!!!</span>
